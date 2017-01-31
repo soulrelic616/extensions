@@ -1,0 +1,1 @@
+define(["exports","thirdparty/babel-runtime/core-js/object/define-property"],function(e,t){"use strict";function r(e){var t=(new Error).stack.match(/^(?:.*?\n){2}.*?at.*?\((?:file:\/\/\/)?(.*?\/)[^\/]*?:\d+:\d+\)\n/)[1];return"win"!==brackets.platform&&(t="/"+t),window.decodeURI(t)+e}t["default"](e,"__esModule",{value:!0}),e.getPath=r});

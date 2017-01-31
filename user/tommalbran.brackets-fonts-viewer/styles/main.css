@@ -1,0 +1,51 @@
+.font-holder {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+.font-holder:before {
+    content: "";
+    display: inline-block;
+    height: 100%; 
+    vertical-align: middle;
+    margin-right: -0.25em;
+}
+    .font-centering {
+        display: inline-block;
+        vertical-align: middle;
+        width: 70%;
+    }
+    .font-header {
+        text-align: left;
+    }
+    .font-data {
+        font-weight: 600;
+    }
+
+.font-display,
+.font-edit {
+    margin: 20px 0;
+    font-size: 3vmax;
+    font-family: "FontDisplay";
+    line-height: 1.2em;
+    cursor: text;
+}
+.font-edit.font-edit {
+    display: none;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    color: #333;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: none;
+    resize: none;
+}
+    .font-edit:focus {
+        box-shadow: none;
+    }

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="48" viewbox="0 0 24 48">
+    <style type="text/css">
+        .outline {
+            fill: none;
+            stroke-width: 2;
+        }
+        .disabled {
+            fill: #bbbbbb;
+        }
+        .disabled .outline {
+            stroke: #bbbbbb;
+        }
+        .enabled {
+            fill: #78b2f2;
+        }
+        .enabled .outline {
+            stroke: #78b2f2;
+        }
+    </style>
+    <g class="disabled">
+        <rect x="4" y="4" height="16" width="16" rx="1" ry="1" class="outline" />
+        <rect x="4" y="5" height="1" width="16" />
+        <rect x="6" y="7" width="8" height="2" />
+        <rect x="8" y="10" width="8" height="2" />
+        <rect x="10" y="13" width="8" height="2" />
+        <rect x="6" y="16" width="8" height="2" />
+    </g>
+    <g class="enabled" transform="translate(0, 24)">
+        <rect x="4" y="4" height="16" width="16" rx="1" ry="1" class="outline" />
+        <rect x="4" y="5" height="1" width="16" />
+        <rect x="6" y="7" width="8" height="2" />
+        <rect x="8" y="10" width="8" height="2" />
+        <rect x="10" y="13" width="8" height="2" />
+        <rect x="6" y="16" width="8" height="2" />
+    </g>
+</svg>

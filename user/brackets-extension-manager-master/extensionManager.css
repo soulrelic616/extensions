@@ -1,0 +1,118 @@
+.extensionManager .modal-header {
+    position: relative;
+}
+
+.extensionManager .tabSwitcher {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    width: 300px;
+    text-align: right;
+    margin: 0;
+    list-style-type: none;
+}
+
+.extensionManager .tabSwitcher li {
+    display: inline-block;
+}
+
+.extensionManager .tabSwitcher a {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 8px 10px 5px 10px;
+    font-size: large;
+
+    border: 1px solid #eee;
+    border-bottom: 0;
+    border-radius: 15px 15px 0 0;
+
+    color: #999;
+}
+.extensionManager .tabSwitcher .active a {
+    cursor: default;
+    border-color: #ddd;
+    background-image: -webkit-linear-gradient(top, #eee, #fff);
+}
+.extensionManager .tabSwitcher .active a, .extensionManager .tabSwitcher a:hover {
+    color: #000;
+}
+
+.extensionManager .modal-body {
+    padding: 0;
+    height: 400px;
+    overflow: auto;
+    width: 590px;
+}
+.extensionManager .modal-body .loading {
+    padding: 175px 0;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+/* Default case: not installed, not enabled */
+.extensionManager .extensions > div {
+    position: relative;
+    border-bottom: 1px solid #eee;
+    padding: 10px 15px;
+    padding-left: 40px;
+    background-image: -webkit-linear-gradient(top, #eee, #999);
+    min-height: 35px;
+}
+.extensionManager .extensions > div:last-child {
+    border-bottom: none;
+}
+.extensionManager .extensions.installed > div {
+    display: none;
+}
+.extensionManager .versionField {
+    display: inline-block;
+}
+.extensionManager .updateButton {
+    display: none;
+}
+.extensionManager .uninstallButton {
+    display: none;
+    margin-left: 5px;
+}
+.extensionManager .installationCheckbox {
+    position: absolute;
+    left: 15px;
+    top: 11px
+}
+.extensionManager .titleField {
+    font-size: large;
+}
+.extensionManager .descriptionField {
+    margin-top: 5px;
+    margin-right: 200px;
+}
+
+.extensionManager .buttons {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+/* Installed, but not enabled */
+.extensionManager .extensions.installed > div.installed {
+    display: block;
+}
+.extensionManager .extensions > div.installed .uninstallButton {
+    display: inline;
+}
+
+/* Installed and enabled */
+.extensionManager .extensions > div.installed.enabled {
+    background-image: -webkit-linear-gradient(top, #bdf, #69c);
+}
+
+/* Outdated extensions */
+.extensionManager .installed.outdated .updateButton {
+    display: inline;
+}
+.extensionManager .installed.outdated .versionField {
+    display: none;
+}

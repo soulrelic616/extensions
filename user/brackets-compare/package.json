@@ -1,0 +1,28 @@
+{
+  "name": "brackets-compare",
+  "version": "0.2.7",
+  "description": "A diff tool for brackets",
+  "keywords": [
+    "brackets-extension",
+    "diff",
+    "compare"
+  ],
+  "homepage": "https://github.com/bomsy/brackets-compare",
+  "bugs": "https://github.com/bomsy/brackets-compare/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Hubert B Manilla",
+    "email": "b4bomsy@gmail.com",
+    "url": "https://blog.bomsy.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bomsy/brackets-compare.git"
+  },
+  "dependencies": {
+    "gulp": "^3.8.11"
+  },
+  "engines": {
+    "brackets": ">=1.2.0"
+  }
+}

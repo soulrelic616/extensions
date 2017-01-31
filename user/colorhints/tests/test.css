@@ -1,0 +1,15 @@
+html, body{
+    background: #eee;
+    padding: 0px;
+    margin: 0px;
+}
+
+.test{
+    background: white;
+    color: #123;
+}
+
+
+#color {
+     color: #eee;   
+}

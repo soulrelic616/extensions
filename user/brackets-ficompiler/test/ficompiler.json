@@ -1,0 +1,33 @@
+{
+    "javascript": {
+        "browserify" : false,
+        "compress": false,
+        "mangle": false,
+        "basedir" : "/",
+
+        "source": [
+            [
+                "sources/javascripts/main.js",
+                "sources/javascripts/module.js"
+            ]
+        ],
+
+        "dest": [
+            "javascripts/main.min.js"
+        ]
+    },
+
+
+    "less": {
+        "compress": false,
+        "basedir" : "/",
+
+        "source": [
+            "sources/stylesheets/main.less"
+        ],
+
+        "dest": [
+            "stylesheets/main.min.css"
+        ]
+    }
+}

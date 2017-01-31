@@ -1,0 +1,18 @@
+{
+    "name": "brackets-ficompiler",
+    "title": "Fi Compiler",
+    "description": "A Brackets extention to compile Less and JavaScript on document save.",
+    "homepage": "https://github.com/FinalDevStudio/brackets-ficompiler",
+    "version": "0.9.1",
+    "author": "Final Development Studio <github@finaldevstudio.com> (http://finaldevstudio.com)",
+    "license": "MIT",
+
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/FinalDevStudio/brackets-ficompiler"
+    },
+
+    "engines": {
+        "brackets": ">=0.39.0"
+    }
+}

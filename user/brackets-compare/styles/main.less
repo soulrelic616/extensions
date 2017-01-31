@@ -1,0 +1,90 @@
+#compare-files {
+  padding-top: 6px;
+  color: #ccc;
+}
+
+.compare-active {
+  color: yellowgreen;
+}
+
+#editor-holder {
+  .hide {
+    visibility: hidden;
+  }
+}
+
+.error-notify {
+  color: red;
+}
+
+#compare-pane {
+  .pane-content {
+    height: 100%;
+	background: #505050!important;
+  }
+  
+  .pane-header {
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px  solid #ccc;
+    background: #fff;
+    min-height: 30px;
+    .pane-header-content {
+      position: absolute;
+      margin: 7px 10px 5px 10px;
+      color: #999;
+      .perm {
+        color: indianred;
+        font-weight: bold;
+      }
+      .file-name {
+        font-weight: bold;
+        color: #777;
+      }
+    }
+    
+    .pane-left {
+      left: 0;
+    }
+    .pane-right {
+      right: 0;
+    }
+  }
+  
+  
+}
+
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+  .glyphicon-duplicate:before {
+    content: "\e224";
+  }
+
+.glyphicon-exclamation-sign {
+  &:before {
+    content: "\e101";
+  }
+}
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
+    url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), 
+    url('../fonts/glyphicons-halflings-regular.woff') format('woff'), 
+    url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), 
+    url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}

@@ -1,0 +1,20 @@
+{
+  "name": "brackets-ficompiler",
+  "title": "Less and JavaScript compiler for Brackets",
+  "description": "Brackets Less and JavaScript compiler on save.",
+  "homepage": "https://github.com/FinalDevStudio/brackets-ficompiler",
+  "version": "0.9.1",
+  "author": "Final Development Studio <sorcery@finaldevstudio.com> (http://finaldevstudio.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FinalDevStudio/brackets-ficompiler"
+  },
+  "dependencies": {
+    "browserify": "^5.9.1",
+    "less": "^1.7.4",
+    "merge": "^1.2.0",
+    "type-of-is": "^3.3.0",
+    "uglify-js": "^2.4.15"
+  }
+}

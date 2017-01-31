@@ -1,0 +1,16 @@
+<dl class="dl-horizontal">
+    <dt>Version:</dt>
+    <dd><span data-bind="text: package.version"></span></dd>
+
+    <dt>Author:</dt>
+    <dd><span data-bind="text: package.author"></span></dd>
+
+    <dt>Email:</dt>
+    <dd><a data-bind="attr:{href: 'mailto:' + package.email()}, text: package.email"></a></dd>
+
+    <dt>Twitter:</dt>
+    <dd><a href="https://twitter.com/manchagnu">@manchagnu</a></dd>
+
+    <dt>Homepage:</dt>
+    <dd><a data-bind="attr:{href: package.homepage}, text: package.homepage"></a></dd>
+</dl>

@@ -1,0 +1,12 @@
+{
+    "name": "brackets-zen-pane",
+    "title": "Zen Pane",
+    "description": "Reduce the opacity of the non-focused pane to reduce distractions",
+    "homepage": "https://github.com/stowball/brackets-zen-pane",
+    "version": "0.0.2",
+    "author": "Matt Stow matt@mattstow.com (http://mattstow.com)",
+    "license": "MIT",
+    "engines": {
+        "brackets": ">=0.44.0"
+    }
+}

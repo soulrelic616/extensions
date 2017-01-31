@@ -1,0 +1,30 @@
+{
+    "name": "brackets-jsbeautifier",
+    "title": "jsbeautifier",
+    "version": "0.0.2",
+    "description": "Beautify JavaScript, HTML, CSS, and more",
+    "homepage": "https://github.com/taichi/brackets-jsbeautifier",
+    "author": "SATO taichi <ryushi@gmail.com>",
+    "license": "Apache-2.0",
+    "categories": "formatting",
+    "keywords": [
+        "formatting",
+        "jsbeautify",
+        "editorconfig"
+    ],
+    "engines": {
+        "brackets": ">=0.36.0"
+    },
+    "devDependencies": {
+        "grunt": "~0.4.4",
+        "grunt-contrib-clean": "~0.5.0",
+        "grunt-contrib-compress": "~0.7.0",
+        "grunt-contrib-jshint": "~0.9.2",
+        "load-grunt-tasks": "0.2.0",
+        "q": "~1.0.1",
+        "lodash": "~2.4.1"
+    },
+    "peerDependencies": {
+        "grunt": "~0.4.0"
+    }
+}

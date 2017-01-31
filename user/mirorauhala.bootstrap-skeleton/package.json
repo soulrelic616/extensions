@@ -1,0 +1,21 @@
+{
+  "name": "mirorauhala.bootstrap-skeleton",
+  "title": "Bootstrap Skeleton",
+  "description": "Add a Bootstrap Skeleton to your page.",
+  "homepage": "https://github.com/mirorauhala/brackets-bootstrap-skeleton",
+  "version": "0.2.0",
+  "author": "Miro Rauhala (https://github.com/mirorauhala)",
+  "license": "MIT",
+  "engines": {
+    "brackets": ">=0.37.0"
+  },
+  "keywords": [
+    "Bootstrap",
+    "Bootstrap 3",
+    "HTML",
+    "device",
+    "screen",
+    "html",
+    "HTML Document"
+  ]
+}

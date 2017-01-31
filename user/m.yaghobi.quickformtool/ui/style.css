@@ -1,0 +1,277 @@
+.qftmainblock
+{
+    padding: 0;
+    margin: 0;
+    height: 0px;
+    overflow:visible;
+    position: relative;
+    background-color:#47484b;
+}
+.qftmainblock-exp
+{
+    height: 30px;
+}
+.qftmainblock img 
+{
+	width:16px;
+	height:auto;
+}
+.qftmainblock .qft-pages img 
+{
+	width:18px;
+	height:auto;
+}
+.qftmainblock .qft-form img 
+{
+	content:url(images/form.png);
+}
+.qftmainblock .qft-textfield img 
+{
+	content:url(images/textfield.png);
+}
+.qftmainblock .qft-textarea img 
+{
+	content:url(images/textarea.png);
+}
+.qftmainblock .qft-button img 
+{
+	content:url(images/button.png);
+}
+.qftmainblock .qft-checkbox img 
+{
+	content:url(images/checkbox.png);
+}
+.qftmainblock .qft-radiobutton img 
+{
+	content:url(images/radiobutton.png);
+}
+.qftmainblock .qft-listmenu img 
+{
+	content:url(images/listmenu.png);
+}
+.qftmainblock .qft-imagebutton img 
+{
+	content:url(images/imagebutton.png);
+}
+.qftmainblock .qft-imagefield img 
+{
+	content:url(images/imagefield.png);
+}
+.qftmainblock .qft-filefield img 
+{
+	content:url(images/filefield.png);
+}
+.qftmainblock .qft-hiddenfield img 
+{
+	content:url(images/hiddenfield.png);
+}
+.qftmainblock .qft-link img 
+{
+	content:url(images/link.png);
+}
+.qftmainblock .qft-html5audio img 
+{
+	content:url(images/html5audio.png);
+}
+.qftmainblock .qft-html5video img 
+{
+	content:url(images/html5video.png);
+}
+.qftmainblock .qft-embedflash img 
+{
+	content:url(images/flashfile.png);
+}
+.qftmainblock .qft-html5file img 
+{
+	content:url(images/html5file.png);
+}
+.qftmainblock .qft-cssfile img 
+{
+	content:url(images/cssfile.png);
+}
+.qftmainblock .qft-jsfile img 
+{
+	content:url(images/jsfile.png);
+}
+.qftmainblock .qft-unpin img 
+{
+	content:url(images/unpin.png);   
+}
+.qftmainblock .qft-pin img 
+{
+	content:url(images/pin.png);
+}
+.qftnotify
+{
+    position: absolute;
+    right: 20px;
+    cursor:pointer;
+    background: #47484b url(images/notify-down.png) no-repeat center;
+    box-shadow: inset 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+    z-index: 99;
+    margin: 0 0 -10px 0 ;
+    height: 14px;
+    width: 26px;
+    transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+    border-radius: 0 0 2px 2px;
+}
+.qftnotify-exp
+{
+    margin-top: 31px;
+    height: 13px;
+    box-shadow: inset 0 2px 8px 0 rgba(0, 0, 0, 1);
+    background: #47484b url(images/notify-up.png) no-repeat center;
+}
+.qftblock
+{
+    opacity: 0.8;
+    position:absolute;
+    top: 0;
+    right: 12px;
+    overflow:hidden;
+    z-index: 100;
+    min-width: 23px;
+    height: 0;
+	margin-top:-2px;
+	padding:0;
+    background: #47484b;
+	transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	box-shadow: inset 0 -2px 3px 0 rgba(0, 0, 0, 0.3);
+    border: 1px rgba(0, 0, 0, 0) solid;
+    border-radius: 0 0 2px 2px;
+}
+
+.qftblock-exp
+{
+    width:auto;
+    height: 30px;
+	box-shadow: none;
+    right:17px;
+    opacity: 1;
+    margin-top: 0;
+    background-image: none;
+}
+
+.qftblock:hover
+{
+    right: 17px;
+    height: 30px;
+    width:inherit;
+	box-shadow: none;
+    opacity: 1;
+    border-radius: 0 0 2px 2px;
+    background-image: none;
+}
+
+.qftmainblock ul
+{
+	text-align: left;
+	margin: 0;
+	padding:0;
+	list-style: none;
+	padding:1px 0 0 0;
+	clear:both;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+.qftblock ul
+{
+	display:;
+	margin-right:-3px;
+	margin-left:-1px;
+}
+.qftblock:hover ul
+{
+	display:block;
+}
+.qftblock-exp ul
+{
+	display:block;
+}
+.qftmainblock ul li 
+{
+	display: inline-block;
+	cursor: pointer;
+	transition: all 0.2s;
+	float:left;
+	color: #fff;
+	border:1px rgba(100, 100, 100, 1) solid;
+	border-width:0 0 0 1px;
+	margin-right:2px;
+	padding-left:3px;
+}
+.qftmainblock ul li:first-child
+{
+	border:1px rgba(0, 0, 0, 0) solid;
+	border-width:0 0 0 1px;
+}
+
+.qftmainblock ul li:hover 
+{
+	color: #fff;
+}
+.qftmainblock ul li ul 
+{
+	padding: 0;
+    margin: 0;
+	display: block-inline;
+	opacity: 1;
+	visibility: visible;
+}
+.qftmainblock ul li ul li 
+{
+	margin:0 1px 1px 0;
+	border:0;
+	font-size:12px;
+	display: block; 
+	color: #fff;
+	float:left;
+	padding:3px 11px 6px 11px;
+	border-radius:2px;
+}
+.qftmainblock ul .qft-pages ul li 
+{
+	padding:3px 10px 5px 10px;
+}
+.qftmainblock ul li:hover ul li 
+{
+	color:#fff;
+}
+.qftmainblock ul li ul li:hover
+{
+	background: #2d2e30;
+}
+.qftmainblock ul li:hover ul 
+{
+	display: block;
+	opacity: 1;
+	visibility: visible;
+}
+
+.qftmainblock ul .qft-other 
+{
+	float:right;
+    margin-right: 1px;
+    margin-left: 0px;
+    border: 0;
+}
+.qftmainblock ul .qft-other ul li
+{
+    margin: 2px 0;
+    display: block;
+	padding:2px 6px 4px 6px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+}
+.qftmainblock ul .qft-other ul li:hover
+{
+	background: rgba(0, 0, 0, 0);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 1);
+}

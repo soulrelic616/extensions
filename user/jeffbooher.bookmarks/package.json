@@ -1,0 +1,21 @@
+{
+    "name": "jeffbooher.bookmarks",
+    "title": "Brackets Editor Bookmarks",
+    "description": "Bookmark lines in the editor as you work so you can quickly jump back to them later.  Open the \"Bookmarks\" Panel to see all of the bookmarks and open them in the editor.",
+    "homepage": "https://github.com/JeffryBooher/brackets-bookmarks-extension",
+    "version": "0.10.6",
+    "author": "Jeffry Booher|jsbooher@adobe.com (http://www.facebook.com/JeffryBooher)|@JeffryBooher",
+    "license": "MIT",
+    "i18n": [
+        "en",
+        "de",
+        "es",
+        "fr",
+        "it",
+        "pl",
+        "ru"
+    ],
+    "engines": {
+        "brackets": ">=0.24.0"
+    }
+}

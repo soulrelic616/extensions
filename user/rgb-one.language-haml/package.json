@@ -1,0 +1,12 @@
+{
+  "name": "rgb-one.language-haml",
+  "title": "Language Haml",
+  "description": "Syntax highlighting for the Haml markup language",
+  "homepage": "https://github.com/rgb-one/language-haml",
+  "version": "1.0.0",
+  "author": "Richard Bowen <rgb.ide@gmail.com> (https://github.com/rgb-one)",
+  "engines": {
+    "brackets": ">=0.24.0"
+  },
+  "keywords": ["haml", "language"]
+}

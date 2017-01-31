@@ -1,0 +1,24 @@
+{
+    "title": "Son of Hammsidian",
+    "name": "son-of-hammsidian-theme",
+    "description": "A variation of John Hamm's Hammsidian dark theme.",
+    "version": "1.1.0",
+    "author": "George Raptis <georapbox@gmail.com> (https://github.com/georapbox)",
+    "license": "MIT",
+    "homepage": "https://github.com/georapbox/son-of-hammsidian-theme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/georapbox/son-of-hammsidian-theme"
+    },
+	"keywords": [
+        "themes",
+        "hammsidian"
+    ],
+    "engines": {
+        "brackets": ">=0.42.0"
+    },
+    "theme": {
+        "file": "son_of_hammsidian.css",
+        "dark": true
+    }
+}

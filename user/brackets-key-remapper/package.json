@@ -1,0 +1,12 @@
+{
+    "name": "brackets-key-remapper",
+    "title": "Brackets Key Remapper",
+    "description": "Allow users to change keyboard shortcuts, edit shortcuts via Debug->Open Preference File",
+    "homepage": "https://bitbucket.org/sacah/brackets-key-remapper",
+    "version": "0.2.4",
+    "author": "Gavin Kalms <sacah@sacah.net>",
+    "license": "Unlicense",
+    "engines": {
+        "brackets": ">=0.43.0"
+    }
+}
