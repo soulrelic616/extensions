@@ -6,13 +6,13 @@
 }
 .svg-preview {
     box-shadow: 0 0 10px 2px rgba(0,0,0,0.25);
+	float: none;
+    display: block;
+    margin: 0 auto!important;
 }
 .checker {
     background-image: url("checkerboard.png");
     background-size: 8px;
-	float: none;
-    display: block;
-    margin: 0 auto!important;
 }
 
 .svg-toolbar {
