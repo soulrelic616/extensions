@@ -1,0 +1,38 @@
+.lintyai-gutter {
+    width: 100px;
+    color: #fff;
+    text-align: right;
+    padding-right: 5px;
+    position: absolute;
+    right: 5px;
+}
+
+.lintyai-gutter.error {
+    background: #cc3333;
+}
+
+.lintyai-gutter.warning {
+    background: #ff9933;
+}
+
+.lintyai-gutter.notice {
+    background: #ffcc66;
+}
+
+.lintyai-line-widget {
+    color: #fff;
+    padding: 5px 0 5px 60px;
+    white-space: pre;
+}
+
+.lintyai-line-widget.error {
+    background: #cc3333;
+}
+
+.lintyai-line-widget.warning {
+    background: #ff9933;
+}
+
+.lintyai-line-widget.notice {
+    background: #ffcc66;
+}

@@ -1,0 +1,7 @@
+{
+    "name": "rhuno.replace.in.selection",
+    "title": "Replace In Selection",
+    "description": "This extension allows you to do a find and replace all within selected text. Shortcut is Ctrl-R",
+    "version": "1.0.0",
+    "author": "Rhuno"   
+}

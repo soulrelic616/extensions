@@ -1,6 +1,15 @@
 # Brackets Autoprefixer Changelog
 All notable changes to this project will be documented in this file.
 
+## 0.7.1 - 2017-03-29
+* Update Autoprefixer to version 6.7.7.
+* Cast browser preference as array instead of object.
+
+## 0.7.0 - 2017-02-25
+* Update Autoprefixer to version 6.7.5.
+* Automatically prefix files edited outside of Brackets.
+* Key command (CTRL+Shift+P) for prefixing current selection.
+
 ## 0.6.4 - 2016-06-16
 * Update Autoprefixer to version 6.3.7.
 * Require Mustache as a module instead of global object.

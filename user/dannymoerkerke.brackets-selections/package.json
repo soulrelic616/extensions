@@ -1,0 +1,12 @@
+{
+    "name": "dannymoerkerke.brackets-selections",
+    "title": "Brackets Selections",
+    "description": "Brackets Extension that adds Sublime Text style selections to Brackets",
+    "homepage": "https://github.com/DannyMoerkerke/brackets-selections",
+    "version": "1.0.1",
+    "author": "Danny Moerkerke <danny@dannymoerkerke.nl> (http://github.com/DannyMoerkerke)",
+    "license": "MIT",
+    "engines": {
+        "brackets": ">=0.40.0"
+    }
+}

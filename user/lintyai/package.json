@@ -1,0 +1,15 @@
+{
+    "name": "lintyai",
+    "version": "1.2.0",
+
+    "title": "Lintyai",
+    "homepage": "https://github.com/lexazloy/brackets-lintyai/",
+    "description": "External linter commander. Work with JS, CSS and LESS, JSON, XML and HTML, PHP and Lua. (Please setup config.js and restart Brackets.)",
+
+    "author": "Лёха zloy и красивый <lexazloy@gmail.com> (http://lexa.cutenews.ru)",
+    "license": "MIT",
+
+    "engines": {
+        "brackets": ">=0.36.0"
+    }
+}
