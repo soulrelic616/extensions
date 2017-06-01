@@ -1,5 +1,10 @@
 # Brackets - NodeJS integration
 
+[![GitHub stars](https://img.shields.io/github/stars/yacut/brackets-nodejs-integration.svg)](https://github.com/yacut/brackets-nodejs-integration/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/yacut/brackets-nodejs-integration.svg)](https://github.com/yacut/brackets-nodejs-integration/network)
+[![GitHub license](https://img.shields.io/npm/l/brackets-nodejs-integration.svg)](https://raw.githubusercontent.com/yacut/brackets-nodejs-integration/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/yacut/brackets-nodejs-integration.svg)](https://github.com/yacut/brackets-nodejs-integration/issues)	
+
 Brackets - NodeJS integration is an extension for [Brackets](http://brackets.io/) editor - it provides Nodejs and Mocha integration for Brackets.
 It's tested and works on any platform supported by Brackets (Windows, Mac OS X, GNU/Linux).
 
@@ -11,20 +16,10 @@ To make **Brackets - NodeJS integration** work you'll need nodejs, npm and mocha
 - **Windows**: [Nodejs and NPM for Windows](https://nodejs.org/en/download/)
 - **Mac OS X**: [Nodejs and NPM for Mac](https://nodejs.org/en/download/package-manager/#osx)
 - **GNU/Linux**: [Nodejs and NPM for Debian/Ubuntu](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
-- **Mocha for all systems**:
-   ```
-   npm install mocha -g
-   ```
-
-##### Optional:
-- **Gulp for all systems**:
-   ```
-   npm install gulp -g
-   ```
-
 
 #### Extension installation:
-To install latest release of **Brackets - NodeJS integration** use the built-in Brackets Extension Manager which downloads the extension from the [extension registry](https://brackets-registry.aboutweb.com/).
+
+Use [brackets-npm-registry](https://github.com/zaggino/brackets-npm-registry)
 
 #### Configuration:
 Extension can be configured by opening the `NodeJS integration` Panel and clicking the *Open settings* button.
@@ -49,22 +44,22 @@ Currently **Brackets - NodeJS integration** supports these features (this list m
 
 ## Some screenshots:
 
-![main](screenshots/main.png)  
+![main](https://github.com/yacut/brackets-nodejs-integration/raw/master/screenshots/main.png)  
 *Main panel of NodeJS integration - run nodejs process*
 
-![mocha](screenshots/mocha.png)  
+![mocha](https://github.com/yacut/brackets-nodejs-integration/raw/master/screenshots/mocha.png)  
 *Main panel of NodeJS integration - run mocha test*
 
-![goto_error](screenshots/goto_error.png)  
+![goto_error](https://github.com/yacut/brackets-nodejs-integration/raw/master/screenshots/goto_error.png)  
 *Main panel of NodeJS integration - quick open error file*
 
-![require_hints](screenshots/require_hints.png)  
+![require_hints](https://github.com/yacut/brackets-nodejs-integration/raw/master/screenshots/require_hints.png)  
 *RequireJS - Show hints while `require`*
 
-![asert_diff](screenshots/asert_diff.png)  
+![asert_diff](https://github.com/yacut/brackets-nodejs-integration/raw/master/screenshots/asert_diff.png)  
 *Mocha test result - Show asert difference*
 
-![settings](screenshots/settings.png)  
+![settings](https://github.com/yacut/brackets-nodejs-integration/raw/master/screenshots/settings.png)  
 *Settings dialog*
 
 
@@ -77,5 +72,6 @@ Currently **Brackets - NodeJS integration** supports these features (this list m
 
 ## In this project used
 
+- [extension registry](https://brackets-registry.aboutweb.com/)
 - [http://fontawesome.io/](http://fontawesome.io/)
 - [https://github.com/caolan/async](https://github.com/caolan/async)

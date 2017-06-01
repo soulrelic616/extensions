@@ -1,19 +1,66 @@
 # Change Log
-All notable changes to this project will be documented in this file.  
+All notable changes to this project will be documented in this file.
 This project tries to adhere to [Semantic Versioning](http://semver.org/).
+
+
+## 1.2.0 - 2017-04-24
+### Fixed
+- PHP multiline strings (see [#91](https://github.com/Hirse/brackets-outline-list/issues/91))
+
+### Changed
+- Use php-parser to parse PHP
+
+
+## 1.1.0 - 2017-04-20
+### Added
+- Arabic translation, thanks to [__@sadik-fattah__](https://github.com/sadik-fattah)
+- Autohide Outline (see [#17](https://github.com/Hirse/brackets-outline-list/issues/17)), thanks to [__@pelatx__](https://github.com/pelatx)
+
+### Fixed
+- Support ES6 Modules (see [#86](https://github.com/Hirse/brackets-outline-list/issues/86))
+- Don't break on destructuring assignments (see [#88](https://github.com/Hirse/brackets-outline-list/issues/88))
+- Support Python parameter default parameters (see [#89](https://github.com/Hirse/brackets-outline-list/issues/89)), thanks to [__@pelatx__](https://github.com/pelatx)
+
+
+## 1.0.1 - 2017-03-13
+### Fixed
+- Use correct name (or none) for callback functions (see [#81](https://github.com/Hirse/brackets-outline-list/issues/81))
+
+
+## 1.0.0 - 2017-03-12
+### Added
+- Support ES6 Classes (see [#79](https://github.com/Hirse/brackets-outline-list/issues/79))
+
+### Changed
+- Use htmlparser2 to parse XML, HTML, and SVG
+- Use PostCSS Safe Parser to parse CSS, Less, and SCSS
+
+### Fixed
+- Various PHP issues, for example multipe inheritance, thanks to [__@pelatx__](https://github.com/pelatx)
+- Use Class icon for PHP Class definitions
+- Don't break on PHP return types (see [#80](https://github.com/Hirse/brackets-outline-list/issues/80))
+
+
+## 1.0.0-alpha.1 - 2017-01-22
+### Fixed
+- No distractions mode conflict (see [#64](https://github.com/Hirse/brackets-outline-list/issues/64))
+- Position change shows hid outline (see [#72](https://github.com/Hirse/brackets-outline-list/issues/72))
+- Broken PHP class detection (see [#73](https://github.com/Hirse/brackets-outline-list/issues/73) and [#74](https://github.com/Hirse/brackets-outline-list/issues/74)), thanks to [__@pelatx__](https://github.com/pelatx)
+- PHP abstract classes detection (see [#76](https://github.com/Hirse/brackets-outline-list/issues/76)), thanks to [__@pelatx__](https://github.com/pelatx)
+- Performance in large PHP files (see [#70](https://github.com/Hirse/brackets-outline-list/issues/70)), thanks to [__@mskocik__](https://github.com/mskocik)
 
 
 ## 1.0.0-alpha.0 - 2016-11-14
 ### Added
-- Python Support
-- Jade Support
-- Stylus Support
-- JSX Support
+- Python Support (see [#44](https://github.com/Hirse/brackets-outline-list/issues/44))
+- Jade Support (see [#15](https://github.com/Hirse/brackets-outline-list/issues/15))
+- Stylus Support (see [#14](https://github.com/Hirse/brackets-outline-list/issues/14))
+- JSX Support (see [#65](https://github.com/Hirse/brackets-outline-list/issues/65))
 
 ### Changed
 - Use Espree to parse JavaScript to extract the outline
-- Use Lexer to parse PHP to extract the outline
-- Update to latest Brackets API
+- Use Lexer to parse PHP to extract the outline, thanks to [__@yfwz100__](https://github.com/yfwz100)
+- Update to Brackets 1.8 API
 
 
 ## 0.7.0 - 2015-07-28
@@ -21,7 +68,7 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/).
 - Names and Descriptions for preferences
 
 ### Changed
-- Requires Brackets 1.4
+- Update to Brackets 1.4 API
 - Reduced Toolbar Icon size to fit design guide
 
 

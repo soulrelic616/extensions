@@ -1,6 +1,7 @@
 'use strict';
 
 define({
+    ACTION_CANCELED: 'Aktion ist abgebrochen.',
     ACTUAL_EXPECTED: 'Aktueller (Links) - Erwarteter (rechts)',
     ADDITIONAL_FLAGS: 'Zusätzliche Flags',
     ADDITIONAL_FLAGS_PLACEHOLDER: 'z.B. --bail für mocha, --require für node',
@@ -52,6 +53,8 @@ define({
     GLOBAL_ADDITIONAL_FLAGS_PLACEHOLDER: 'z.B. --bail für mocha, --require für node',
     HIDE_DIFFERENCE: 'Differenz ausblenden',
     INSTALL_DEPENDENCIES: 'Abhängigkeiten installieren...',
+    INSTALLATION_FAILED: 'Installation ist abgebrochen',
+    INSTALLATION_FAILED_MESSAGE: 'Installation ist nicht fertig. Führen Sie bitte "npm install" Befehl in dem Erweiterungsverzeichnis.',
     INSTALLATION_FINISHED: 'Installation ist abgeschlossen',
     JUMP_TO_REQUIRE: 'Springen zu Require',
     NAME: 'Name',
@@ -61,6 +64,8 @@ define({
     PARENT_DIRECTORY: 'Übergeordnetes Verzeichnis',
     PATH_TO_MOCHA_BINARY: 'Pfad zum Mocha binary',
     PATH_TO_MOCHA_BINARY_PLACEHOLDER: 'leer lassen für die globale mocha Befehl',
+    PATH_TO_GULP_BINARY: 'Pfad zum Gulp binary',
+    PATH_TO_GULP_BINARY_PLACEHOLDER: 'leer lassen für die globale gulp Befehl',
     PATH_TO_NODE_BINARY: 'Pfad zum Node binary',
     PATH_TO_NODE_BINARY_PLACEHOLDER: 'leer lassen für die globale node Befehl',
     PATH_TO_NPM_BINARY: 'Pfad zum npm binary',
@@ -81,6 +86,7 @@ define({
     STOP: 'Stop',
     STOP_ACTIVE_RUNNER: 'Stop (aktueller runner)',
     TARGET: 'Ziel',
+    TARGET_EMPTY: 'Das Ziel ist lehr.',
     TESTS: 'Tests',
     TOGGLE_DEBUGGER: 'Toggle debugger',
     TOGGLE_MOCHA: 'Toggle mocha view'

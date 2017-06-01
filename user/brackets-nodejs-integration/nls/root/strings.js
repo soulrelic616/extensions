@@ -1,6 +1,7 @@
 'use strict';
 
 define({
+    ACTION_CANCELED: 'Action is canceled.',
     ACTUAL_EXPECTED: 'Actual (left) - Expected (right)',
     ADDITIONAL_FLAGS: 'Additional Flags',
     ADDITIONAL_FLAGS_PLACEHOLDER: 'e.g. --bail for mocha, --require for node',
@@ -52,6 +53,8 @@ define({
     GLOBAL_ADDITIONAL_FLAGS_PLACEHOLDER: 'e.g. --bail for mocha, --require for node',
     HIDE_DIFFERENCE: 'Hide difference',
     INSTALL_DEPENDENCIES: 'Install dependencies...',
+    INSTALLATION_FAILED: 'Installation failed',
+    INSTALLATION_FAILED_MESSAGE: 'The installation is not finished. Please go to the extension folder in your terminal and run "npm install" command.',
     INSTALLATION_FINISHED: 'Installation finished',
     JUMP_TO_REQUIRE: 'Jump to Require',
     NAME: 'Name',
@@ -61,6 +64,8 @@ define({
     PARENT_DIRECTORY: 'Parent directory',
     PATH_TO_MOCHA_BINARY: 'Path to Mocha binary',
     PATH_TO_MOCHA_BINARY_PLACEHOLDER: 'leave empty for global mocha command',
+    PATH_TO_GULP_BINARY: 'Path to Gulp binary',
+    PATH_TO_GULP_BINARY_PLACEHOLDER: 'leave empty for global gulp command',
     PATH_TO_NODE_BINARY: 'Path to Node binary',
     PATH_TO_NODE_BINARY_PLACEHOLDER: 'leave empty for global node command',
     PATH_TO_NPM_BINARY: 'Path to npm binary',
@@ -81,6 +86,7 @@ define({
     STOP: 'Stop',
     STOP_ACTIVE_RUNNER: 'Stop (active runner)',
     TARGET: 'Target',
+    TARGET_EMPTY: 'The target in your run configuration is empty.',
     TESTS: 'Tests',
     TOGGLE_DEBUGGER: 'Toggle debugger',
     TOGGLE_MOCHA: 'Toggle mocha view'

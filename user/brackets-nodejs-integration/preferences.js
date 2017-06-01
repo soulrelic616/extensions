@@ -8,9 +8,9 @@ define(function main(require, exports, module) {
 
     // Default settings
     prefs.definePreference('node-bin', 'string', '');
-    prefs.definePreference('mocha-bin', 'string', '');
+    prefs.definePreference('mocha-bin', 'string', extension_utils.getModulePath(module, 'node_modules/mocha/bin/mocha'));
     prefs.definePreference('npm-bin', 'string', '');
-    prefs.definePreference('gulp-bin', 'string', '');
+    prefs.definePreference('gulp-bin', 'string', extension_utils.getModulePath(module, 'node_modules/gulp/bin/gulp.js'));
     prefs.definePreference('autoscroll', 'boolean', true);
     prefs.definePreference('create_new_tab_when_panel_opened_and_empty', 'boolean', true);
     prefs.definePreference('change_runner_when_new_tab_opened', 'boolean', true);
@@ -18,6 +18,14 @@ define(function main(require, exports, module) {
     prefs.definePreference('v8-flags', 'string', '');
     prefs.definePreference('additional-flags', 'string', '');
     prefs.definePreference('configurations', 'array', [
+        {
+            'name': 'npm run',
+            'cwd': '',
+            'flags': '',
+            'type': 'npm',
+            'target': '{project_root}/package.json',
+            'debug': false
+        },
         {
             'name': 'nodejs process sample',
             'cwd': '',
@@ -33,8 +41,7 @@ define(function main(require, exports, module) {
             'type': 'node',
             'target': extension_utils.getModulePath(module, 'tests/server.js'),
             'debug': false
-        }
-        ,
+        },
         {
             'name': 'mocha test sample',
             'cwd': '',

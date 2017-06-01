@@ -1,7 +1,20 @@
 # Brackets Todo Changelog
 All notable changes to this project will be documented in this file.
 
-## 0.8.2 - Unreleased
+## 0.9.2 - 2017-05-15
+* Add buttons for collapsing and expanding all files.
+* Fix error if file was opened from last session.
+
+## 0.9.1 - 2017-05-11
+* Fix error when all files were closed.
+
+## 0.9.0 - 2017-05-10
+* Use React for rendering interface.
+* ESLint and Travis CI for linting code.
+* Swedish extension description.
+* Remove links to GitHub mentions and issues.
+
+## 0.8.2 - 2017-04-01
 * Use Mustache module instead of deprecated global object.
 * Turkish translation. Thanks to Nazim Can Altinova (@canaltinova).
 

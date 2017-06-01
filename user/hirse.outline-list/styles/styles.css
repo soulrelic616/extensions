@@ -56,11 +56,19 @@
     box-sizing: content-box;
     font-size: 12px;
     height: 13px;
-    outline: none;
     padding: 4px 6px;
     position: absolute;
     top: 7px;
     width: 13px;
+}
+
+.outline-button:focus {
+    box-shadow: 0 0 0 1px #94ceff;
+    outline: none;
+}
+
+.outline-button:active {
+    box-shadow: none;
 }
 
 #outline-settings {
@@ -94,6 +102,19 @@
     padding-left: 14px;
 }
 
+/* === Outline Autohide === */
+
+#outline-autohide-placeholder {
+    background-color: #47484b;
+    bottom: 0;
+    position: absolute;
+    top: 0;
+}
+
+.outline-autohide-content {
+    -webkit-transition: right 0.2s ease-out;
+    transition: right 0.2s ease-out;
+}
 
 /* ==== Outline Entries ==== */
 
@@ -117,7 +138,7 @@
 
 .outline-entry-indent {
     color: #adb9bd;
-    font-family: Ionicons;
+    font-family: monospace;
 }
 
 .outline-entry-arg {
@@ -136,6 +157,7 @@
     display: none;
 }
 
+
 /* ==== Language Specific Entries ==== */
 
 
@@ -144,6 +166,7 @@
     color: #f4e422;
     content: "\f3a0";
 }
+
 .outline-entry-js.outline-entry-private:before {
     color: #229bf4;
     content: "\f200";
@@ -237,7 +260,7 @@
     content: "\f20b";
 }
 
-.outline-entry-css-at-rules:before {
+.outline-entry-css-at-rule:before {
     color: #f4229b;
     content: "\f10f";
 }
@@ -245,6 +268,12 @@
 .outline-entry-css-attribute:before {
     color: #f4e422;
     content: "\f2aa";
+}
+
+.outline-entry-css-parent:before {
+    color: #8164cc;
+    content: "&";
+    font-family: sans-serif;
 }
 
 
@@ -276,6 +305,11 @@
 
 
 /* PHP */
+.outline-entry-php.outline-entry-class:before {
+    color: #f4e422;
+    content: "\f3a0";
+}
+
 .outline-entry-php.outline-entry-private:before {
     color: #229bf4;
     content: "\f200";
@@ -400,7 +434,6 @@
 
 /* XML */
 .outline-entry-xml-namespace,
-.outline-entry-xml-id,
-.outline-entry-xml-class {
+.outline-entry-xml-attributes {
     color: #adb9bd;
 }

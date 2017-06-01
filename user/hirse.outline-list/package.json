@@ -1,6 +1,6 @@
 {
   "name": "hirse.outline-list",
-  "version": "1.0.0-alpha.0",
+  "version": "1.2.0",
   "title": "Brackets Outline List",
   "description": "Displays a list of the functions or definitions in the currently opened document. Works with CSS, CoffeeScript, HTML, Haxe, Jade, JavaScript, JSX, LESS, Markdown, PHP, Python, Ruby, SCSS, SVG, Stylus, and XML.",
   "engines": {
@@ -31,6 +31,7 @@
     "XML"
   ],
   "i18n": [
+    "ar",
     "de",
     "en",
     "es",
@@ -38,6 +39,9 @@
     "ja"
   ],
   "package-i18n": {
+    "ar":{
+      "description": " CSS, CoffeeScript, HTML, Haxe, Jade, JavaScript, JSX, LESS, Markdown, PHP, Python, Ruby, SCSS, SVG, Stylus, and XML.يعرض قائم  بالوظائف أو التعريفات في الوثيقة المفتوحة حاليا ، يعمل مع لغة"
+    },
     "de": {
       "description": "Zeigt eine Liste der Funktionen oder Definitionen im geöffneten Dokument. Unterstützt CSS, CoffeeScript, HTML, Haxe, Jade, JavaScript, JSX, LESS, Markdown, PHP, Python, Ruby, SCSS, SVG, Stylus, und XML."
     },
@@ -52,12 +56,16 @@
     }
   },
   "devDependencies": {
+    "codeclimate-test-reporter": "0.x.x",
+    "csslint": "1.x.x",
     "eslint": "3.x.x",
     "grunt": "1.x.x",
     "grunt-contrib-compress": "1.x.x",
+    "htmlhint": "0.x.x",
     "jasmine-core": "2.x.x",
     "karma": "1.x.x",
     "karma-chrome-launcher": "2.x.x",
+    "karma-coverage": "1.x.x",
     "karma-jasmine": "1.x.x",
     "karma-phantomjs-launcher": "1.x.x",
     "karma-requirejs": "1.x.x",
@@ -66,7 +74,10 @@
     "requirejs-text": "2.x.x"
   },
   "scripts": {
-    "test": "eslint . && karma start --browsers PhantomJS --single-run",
+    "lint": "eslint . && htmlhint -c .htmlhintrc templates && csslint --config=.csslintrc styles",
+    "pretest": "npm run lint",
+    "test": "karma start --browsers PhantomJS --single-run",
+    "codeClimate": "codeclimate-test-reporter < coverage/lcov/lcov.info",
     "bundle": "grunt"
   }
 }

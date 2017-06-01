@@ -1,4 +1,4 @@
-define(function (require, exports, module) {
+define(function JSParser(require, exports, module) {
     "use strict";
 
     var espree = require("thirdparty/espree");
@@ -42,6 +42,15 @@ define(function (require, exports, module) {
      * @returns {object|boolean} Parsed function object, or name
      */
     function _visit(node, name, level) {
+        if (node.type === "ClassDeclaration") {
+            return {
+                name: node.id.name,
+                line: node.loc.start.line,
+                type: "class",
+                level: level,
+                args: node.superClass ? [node.superClass.name] : []
+            };
+        }
         if (node.params) {
             name = node.id ? node.id.name : name || UNNAMED_PLACEHOLDER;
             var type;
@@ -69,10 +78,16 @@ define(function (require, exports, module) {
                 return node.id.name;
             case "ExpressionStatement":
                 if (node.expression.left) {
-                    return node.expression.left.name || node.expression.left.property.name;
+                    if (node.expression.left.name) {
+                        return node.expression.left.name;
+                    } else if (node.expression.left.property && node.expression.left.property.name) {
+                        return node.expression.left.property.name;
+                    }
                 }
                 return false;
             case "Property":
+                return node.key.name;
+            case "MethodDefinition":
                 return node.key.name;
             default:
                 return false;
@@ -108,7 +123,7 @@ define(function (require, exports, module) {
 
                 if (Array.isArray(child)) {
                     for (var i = 0; i < child.length; i++) {
-                        list = _traverse(child[i], list, name, level);
+                        list = _traverse(child[i], list, "", level);
                     }
                 } else {
                     list = _traverse(child, list, name, level);
@@ -129,6 +144,7 @@ define(function (require, exports, module) {
             ast = espree.parse(source, {
                 loc: true,
                 ecmaVersion: 8,
+                sourceType: "module",
                 ecmaFeatures: {
                     jsx: true
                 }
@@ -137,12 +153,8 @@ define(function (require, exports, module) {
             throw new Error("SyntaxError");
         }
 
-        try {
-            var result = _traverse(ast, [], "", 0);
-            return result;
-        } catch (error) {
-            throw new Error("ParserError");
-        }
+        var result = _traverse(ast, [], "", 0);
+        return result;
     }
 
     module.exports = {

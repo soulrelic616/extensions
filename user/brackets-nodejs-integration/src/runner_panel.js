@@ -32,6 +32,8 @@ define(function main(require, exports, module) {
     var runner_menu_template = require('text!../templates/runner_menu.html');
     var utils = require('../utils');
 
+    var keywords_parser = require('./keywords_parser');
+
     var $dropdown = null;
     var $runner_panel = $(null);
     var panel = null;
@@ -132,8 +134,10 @@ define(function main(require, exports, module) {
 
     $runner_panel.on('click', '.link_to_source', function (e) {
         var link = e.target.innerHTML;
-        var link_properties = link.split(/:[^\\/]/);
-        var path_to_file = link_properties[0];
+        var link_properties = link.split(/:/);
+        var file_column = link_properties.pop();
+        var file_line = link_properties.pop();
+        var path_to_file = link_properties.join(':');
         path_to_file = file_utils.convertWindowsPathToUnixPath(path_to_file);
         if (!file_system.isAbsolutePath(path_to_file)) {
             get_runner($runner_panel.find('.nodejs-integration-tab-pane.active').attr('id')).done(function (active_runner) {
@@ -148,8 +152,6 @@ define(function main(require, exports, module) {
                 path_to_file = working_directory + path_to_file;
             });
         }
-        var file_line = link_properties[1];
-        var file_column = link_properties[2];
         command_manager.execute(commands.FILE_OPEN, {
                 fullPath: path_to_file
             })
@@ -400,6 +402,14 @@ define(function main(require, exports, module) {
                 flags: $(this).attr('flags')
             };
         }
+        if (!run_configuration.target) {
+            return utils.show_popup_message(strings.TARGET_EMPTY + '\n' + strings.ACTION_CANCELED);
+        }
+
+        // parse keywords
+        run_configuration.target = keywords_parser.parse(run_configuration.target);
+        run_configuration.cwd = keywords_parser.parse(run_configuration.cwd);
+
         var selected_run_configuration = $runner_panel.find('.nodejs-integration-tab-pane.active .run-configuration-dropdown-toggle');
         selected_run_configuration.find('.type')
             .removeClass('node')

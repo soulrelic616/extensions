@@ -290,10 +290,10 @@ define(function main(require, exports, module) {
         var command;
         var v8flags = prefs.get('v8-flags');
         var additional_flags = _.union((prefs.get('additional-flags') || '').split(' '), (flags || '').split(' ')).join(' ');
-        var node_bin = prefs.get('node-bin') ? prefs.get('node-bin') : 'node';
-        var npm_bin = prefs.get('npm-bin') ? prefs.get('npm-bin') : 'npm';
-        var gulp_bin = prefs.get('gulp-bin') ? prefs.get('gulp-bin') : 'gulp';
-        var mocha_bin = prefs.get('mocha-bin') ? prefs.get('mocha-bin') : 'mocha';
+        var node_bin = prefs.get('node-bin') ? '"' + prefs.get('node-bin') + '"' : 'node';
+        var npm_bin = prefs.get('npm-bin') ? '"' + prefs.get('npm-bin') + '"' : 'npm';
+        var gulp_bin = prefs.get('gulp-bin') ? '"' + prefs.get('gulp-bin') + '"' : 'gulp';
+        var mocha_bin = prefs.get('mocha-bin') ? '"' + prefs.get('mocha-bin') + '"' : 'mocha';
         var mocha_reporter_path = extension_utils.getModulePath(module) + 'reporter/mocha_json_stream.js';
         var mocha_default_flags = ' --reporter "' + mocha_reporter_path + '" ';
         command_target = ' "' + command_target + '" ';
@@ -320,6 +320,9 @@ define(function main(require, exports, module) {
                 command_target = '';
                 break;
             case 'gulp':
+                if (!script) {
+                    return;
+                }
                 command = gulp_bin + ' ' + script + ' --color ' + v8flags + ' ' + additional_flags;
                 command_target = '';
                 break;
@@ -425,7 +428,7 @@ define(function main(require, exports, module) {
 
     function write(that, output_string, diff) {
         //get links to files
-        var links = output_string.match(/\((.*?)([^/\\]*?)(\.[^/\\.]*)?:[0-9]+:[0-9]+\)/gi);
+        var links = output_string.match(/([a-z]:)?((\\|\/)[a-z`~!@#$%^&()\-_+=;',.]+)+:[0-9]+:[0-9]+/gi);
         if (links) {
             links.forEach(function (link) {
                 link = link.replace(/[()]/g, '');

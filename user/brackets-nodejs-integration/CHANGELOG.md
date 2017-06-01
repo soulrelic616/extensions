@@ -131,3 +131,38 @@
 - fixed debugger locals font and view
 - fixed locals duplicates in debugger
 - fixed strict function declaration at extension load
+
+### 1.8.8
+
+- merged "settings supports keyword" pull request by guofei0723
+- updated mocha to 3.2.0
+- fixed: Cannot find module 'tree-kill' #12
+- fixed: Error running Gulp: "gulp null --color " -> Task 'null' is not in your gulpfile #20
+
+### 1.8.9
+
+- remove tree-kill from dependencies
+- add error message if initial npm instal failed
+
+### 1.8.10
+
+- Fix issue: Start current NodeJS project with command+shift+P doesn't run. https://github.com/yacut/brackets-nodejs-integration/issues/25
+- Fix issue: Error installing in other langage. https://github.com/yacut/brackets-nodejs-integration/issues/26
+
+### 1.8.11
+
+- Move to NPM registry
+
+### 1.8.13
+
+- Fix dependencies
+- Add gulp to dependencies
+
+
+### 1.8.16
+
+- Fix script paths for windows users
+
+### 1.8.17
+
+- Add gulp binary path to settings

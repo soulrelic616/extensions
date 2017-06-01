@@ -9,22 +9,37 @@ An extension for [Brackets](https://github.com/adobe/brackets/) to show indent g
 ### How to Use Extension
 Toggle the extension with **View > Indent Guides**.
 
+## Screenshots:
+
+**Life without Indent Guides**:
+
+![off](screenshots/indent-guides-off.png)
+
+**Life *with* Indent Guides**:
+
+![on](screenshots/indent-guides-on.png)
+
+**Works great in the dark as well**:
+
+![dark](screenshots/indent-guides-dark.png)
+
+**Preferences let you control the style and color**:
+
+![preferences](screenshots/indent-guides-red-dotted.png)
+
 ### Extension Preferences
 
 **`brackets-indent-guides.enabled`** *(boolean)*<br/>
-If the value of this preference is `true`, Indent Guides will be visible.
-If the value is `false`, Indent Guides will be hidden.
+Determines whether the indent guides will be shown or hidden.
+
+**`brackets-indent-guides.hideFirst`** *(boolean)*<br/>
+Determines whether the first Indent Guide will be hidden or shown.
 
 **`brackets-indent-guides.guideColor`** *(string)*<br/>
 The color of the indent guides. Can be any valid CSS Color value.
 
 **`brackets-indent-guides.guideStyle`** *(string)*<br/>
 This value determines the style of the guide: "solid" or "dotted".
-
-**`brackets-indent-guides.hideFirst`** *(boolean)*<br/>
-If the value of this preference is `true` the first Indent Guide will not be drawn.
-This is useful if you are using a Brackets Theme that has a vertical border separating
-the line numbers from the code.  Set the value to `false` to draw all Indent Guides.
 
 For more information on setting preferences see [How to Use Brackets - Preferences](https://github.com/adobe/brackets/wiki/How-to-Use-Brackets#preferences)
 
@@ -44,7 +59,7 @@ For more information on setting Custom Key Bindings see [User Key Bindings](http
 ### Code Challenges
 
 Code challenges are closed issues and enhancement requests that I have attempted
-to resolve without success. Maybe you have an idea that can help?
+to resolve without success. Maybe you have an idea that will help?
 
 Just look for the `code challenge` label in the closed issues list. Post a comment
 on the issue and we can discuss your solution ideas. Here is a list of the current
@@ -57,6 +72,3 @@ code challenges for this extension:
 
 ### License
 MIT-licensed -- see `main.js` for details.
-
-### Compatibility
-Tested on Brackets Release 1.0.0 Mac OSX (Mavericks).

@@ -1,6 +1,7 @@
 'use strict';
 
 define({
+    ACTION_CANCELED: 'Действие прервано.',
     ACTUAL_EXPECTED: 'Актуальное (слева) - Ожидаемое (справа)',
     ADDITIONAL_FLAGS: 'Дополнительные Флаги',
     ADDITIONAL_FLAGS_PLACEHOLDER: 'например --bail для mocha, --require для node',
@@ -52,6 +53,8 @@ define({
     GLOBAL_ADDITIONAL_FLAGS_PLACEHOLDER: 'например --bail для mocha, --require для node',
     HIDE_DIFFERENCE: 'Скрыть разницу',
     INSTALL_DEPENDENCIES: 'Установка зависимостей...',
+    INSTALLATION_FAILED: 'Уставновка прервана',
+    INSTALLATION_FAILED_MESSAGE: 'Установка не заверщена. Пожалуйста проследуйте в папку аддона и выполните "npm install" команду.',
     INSTALLATION_FINISHED: 'Установка завершена',
     JUMP_TO_REQUIRE: 'Перейти к Require',
     NAME: 'Имя',
@@ -61,6 +64,8 @@ define({
     PARENT_DIRECTORY: 'Родительский каталог',
     PATH_TO_MOCHA_BINARY: 'Путь к Mocha',
     PATH_TO_MOCHA_BINARY_PLACEHOLDER: 'оставьте пустым для глобальной mocha команды',
+    PATH_TO_GULP_BINARY: 'Путь к Gulp',
+    PATH_TO_GULP_BINARY_PLACEHOLDER: 'оставьте пустым для глобальной gulp команды',
     PATH_TO_NODE_BINARY: 'Путь к Node',
     PATH_TO_NODE_BINARY_PLACEHOLDER: 'оставьте пустым для глобальной node команды',
     PATH_TO_NPM_BINARY: 'Путь к Mocha',
@@ -81,6 +86,7 @@ define({
     STOP: 'Стоп',
     STOP_ACTIVE_RUNNER: 'Стор (активный runner)',
     TARGET: 'Цель',
+    TARGET_EMPTY: 'Не задана цель в настройке.',
     TESTS: 'Тесты',
     TOGGLE_DEBUGGER: 'Переключить отладчик',
     TOGGLE_MOCHA: 'Переключить mocha панель'
