@@ -1,6 +1,10 @@
 # Brackets Todo Changelog
 All notable changes to this project will be documented in this file.
 
+## 0.9.3 - 2017-05-29
+* Fix issue with reserved words on Ubuntu. Thanks to Ozgur (@blueorange589).
+* Fix issue missing array methods. Thanks to Ndot (@Ndot).
+
 ## 0.9.2 - 2017-05-15
 * Add buttons for collapsing and expanding all files.
 * Fix error if file was opened from last session.
