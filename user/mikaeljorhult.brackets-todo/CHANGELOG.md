@@ -1,6 +1,21 @@
 # Brackets Todo Changelog
 All notable changes to this project will be documented in this file.
 
+## 0.9.7 - 2017-10-04
+* Fix issue when file dosen't have any comments. Thanks to Pete Nykänen (@petetnt).
+
+## 0.9.6 - 2017-09-27
+* Require Brackets 1.11.0 so Preact is available.
+* Replace React with Preact. Thanks to Boopesh Mahendran (@boopeshmahendran).
+* Fix typos in Readme. Thanks to Boopesh Mahendran (@boopeshmahendran).
+
+## 0.9.5 - 2017-09-06
+* Fix issue with default regular expression. Thanks to nextgensparx (@nextgensparx).
+
+## 0.9.4 - 2017-06-30
+* Fix issue with line endings on certain platforms. Thanks to Christopher Carswell (@ccarswell).
+* Portuguese translation. Thanks to Ndot (@Ndot).
+
 ## 0.9.3 - 2017-05-29
 * Fix issue with reserved words on Ubuntu. Thanks to Ozgur (@blueorange589).
 * Fix issue missing array methods. Thanks to Ndot (@Ndot).
