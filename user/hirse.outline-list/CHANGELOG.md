@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 This project tries to adhere to [Semantic Versioning](http://semver.org/).
 
 
+## 1.4.1 - 2017-10-25
+### Fixed
+- Support Python comments after function definitions (see [#99](https://github.com/Hirse/brackets-outline-list/issues/99)), thanks to [__@pelatx__](https://github.com/pelatx)
+- Enable experimentalObjectRestSpread for JavaScript parsing (see [#103](https://github.com/Hirse/brackets-outline-list/issues/103))
+
+
 ## 1.4.0 - 2017-08-25
 ### Added
 - Support for Vue Component Files using HTML mode (see [#98](https://github.com/Hirse/brackets-outline-list/issues/98))
@@ -54,7 +60,7 @@ This project tries to adhere to [Semantic Versioning](http://semver.org/).
 - Use PostCSS Safe Parser to parse CSS, Less, and SCSS
 
 ### Fixed
-- Various PHP issues, for example multipe inheritance, thanks to [__@pelatx__](https://github.com/pelatx)
+- Various PHP issues, for example multiple inheritance, thanks to [__@pelatx__](https://github.com/pelatx)
 - Use Class icon for PHP Class definitions
 - Don't break on PHP return types (see [#80](https://github.com/Hirse/brackets-outline-list/issues/80))
 
