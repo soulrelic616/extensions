@@ -1,9 +1,0 @@
-{
-    "name": "lesshints",
-    "title": "LESSHints",
-    "author": "Konstantin Kobs",
-    "homepage": "https://github.com/konstantinkobs/brackets-LESShints",
-    "version": "1.1.0",
-    "engines": { "brackets": ">=0.23" },
-    "description": "Autocompletion for LESS variables."
-}

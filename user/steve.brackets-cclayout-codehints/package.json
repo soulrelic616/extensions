@@ -1,0 +1,20 @@
+{
+    "title": "Definitive Email-HTML code hints",
+    "name": "steve.brackets-cclayout-codehints",
+    "description": "Extends HTML code hints for email HTML and CSS. It also adds support for Measuremail CampaignCLoud and Measuremail emailtemplate development.",
+    "version": "0.0.1",
+    "keywords": ["template", "email", "CampaignCloud", "table", "hints"],
+    "author": "nycsteve2k",
+    "homepage": "https://github.com/nycsteve2k/Brackets-Code-Hints-for-HTML-Emails",
+    "files": [
+        "main.js",
+        "HtmlAttributes.json",
+        "HtmlTags.json",
+        "CSSProperties.json",
+        "README.md"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/nycsteve2k/Brackets-Code-Hints-for-HTML-Emails.git"
+    }
+}
