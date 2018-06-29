@@ -160,3 +160,5 @@
         /*box-shadow: 0 0 1em #0AE0FF;*/
     }
 }
+
+.forced-hidden{display:block!important}
